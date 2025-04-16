@@ -1,2 +1,3 @@
 # my-website
-This is a website that's kind of silly right now
+## By Lindsey Handley
+This is a website about my garden! 
