@@ -7,11 +7,37 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background-color: #88b985;
-  color: white;
+/* header {
+  background-image: url("img/floral-background.png");
+  color: rgb(0, 0, 0);
   padding: 1rem 2rem;
   text-align: center;
+} */
+
+header {
+  position: relative;
+  background-image: url("img/floral-background.png");
+  background-size: cover;
+  background-position: center;
+  color: rgb(52, 81, 56);
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden; /* ensures overlay stays within bounds */
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.7); /* white overlay, adjust opacity */
+  z-index: 0;
+}
+
+/* Ensure text appears above the overlay */
+header h1,
+header p {
+  position: relative;
+  z-index: 1;
 }
 
 nav {
@@ -41,6 +67,7 @@ main {
 img {
   float: right;
   margin: 10px;
+  border: #456c4d solid 3px;
 }
 
 section {
@@ -49,7 +76,7 @@ section {
 
 h1,
 h2 {
-  color: #456c4d;
+  color: #2f4934;
 }
 
 #h2-me {

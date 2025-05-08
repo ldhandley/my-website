@@ -1,0 +1,7 @@
+article {
+    column-count: 2;
+}
+
+article .blog-header {
+    column-span: all;
+}
