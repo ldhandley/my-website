@@ -7,13 +7,6 @@ body {
   line-height: 1.6;
 }
 
-/* header {
-  background-image: url("img/floral-background.png");
-  color: rgb(0, 0, 0);
-  padding: 1rem 2rem;
-  text-align: center;
-} */
-
 header {
   position: relative;
   background-image: url("img/floral-background.png");
@@ -22,14 +15,16 @@ header {
   color: rgb(52, 81, 56);
   padding: 2rem;
   text-align: center;
-  overflow: hidden; /* ensures overlay stays within bounds */
+  overflow: hidden;
+  /* ensures overlay stays within bounds */
 }
 
 header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.7); /* white overlay, adjust opacity */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* white overlay, adjust opacity */
   z-index: 0;
 }
 
@@ -86,4 +81,3 @@ h2 {
     flex-direction: column;
   }
 }
-
